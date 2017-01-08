@@ -1,5 +1,5 @@
 import java.util.Scanner;
-
+import java.util.Random;
 
 public class Base {
 
@@ -7,13 +7,15 @@ public class Base {
 	 * @param args
 	 */
 	
-	public static Scanner in = new Scanner(System.in);
+	private static Scanner in = new Scanner(System.in);
 	
 	public static void strwork(){
 		String str = "";
 		System.out.println("Write your name");
 		str = in.nextLine();
-		System.out.print("Hello "+ str);
+		System.out.println("Hello "+ str);
+		System.out.println(str.length());
+		System.out.println(str.concat(" boss"));
 	}
 	
 	public static void massive(){
@@ -23,10 +25,13 @@ public class Base {
 			mas[i] = i;
 			System.out.print(" " + mas[i]);
 		}
-		System.out.println("  length = " + mas.length);
-		
+		System.out.println("  length = " + mas.length);		
 	}
 	
+	public static void randomgames(){
+		Random random = new Random();
+		
+	}
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
