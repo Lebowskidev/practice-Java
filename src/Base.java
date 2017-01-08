@@ -1,5 +1,5 @@
 import java.util.Scanner;
-import java.util.Random;
+import gpack.Game;
 
 public class Base {
 
@@ -28,16 +28,15 @@ public class Base {
 		System.out.println("  length = " + mas.length);		
 	}
 	
-	public static void randomgames(){
-		Random random = new Random();
-		
-	}
+	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		strwork();
+		Game gobject = new Game();
+		gobject.game();
+	    strwork();
 		massive();
+		
 		
 	}
 
