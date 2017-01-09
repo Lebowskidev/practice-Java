@@ -2,6 +2,7 @@ import java.util.Collections;
 import java.util.Scanner;
 import gpack.Game;
 import java.util.ArrayList;
+import java.io.*;
 
 public class Base {
 
@@ -11,6 +12,7 @@ public class Base {
 	
 	private static Scanner in = new Scanner(System.in);
 	
+		
 	public static void strwork(){
 		String str = "";
 		System.out.println("Write your name");
