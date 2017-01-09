@@ -1,5 +1,7 @@
+import java.util.Collections;
 import java.util.Scanner;
 import gpack.Game;
+import java.util.ArrayList;
 
 public class Base {
 
@@ -28,7 +30,18 @@ public class Base {
 		System.out.println("  length = " + mas.length);		
 	}
 	
-	
+	public static void listcreate(){
+		ArrayList testdata = new ArrayList();
+		System.out.println("Create new name");
+		String name = in.next();
+		testdata.add(name);
+		testdata.add("qwerty");
+		testdata.add("asd");
+		System.out.println(testdata);
+		System.out.println("size = " + testdata.size());
+		Collections.sort(testdata);
+		System.out.print("sort = " + testdata);
+	}	
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -36,7 +49,7 @@ public class Base {
 		gobject.game();
 	    strwork();
 		massive();
-		
+		listcreate();
 		
 	}
 
